@@ -6,7 +6,9 @@ const _= require("lodash");
 app.set('view engine', 'ejs');
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(express.static("public"));
-mongoose.connect("mongodb+srv://Yxsh:Yash1234@cluster0.yahz0.mongodb.net/todolistDB", {useNewUrlParser:true});
+
+mongoose.connect(`mongodb+srv://Yash:Yash1234@cluster0.yahz0.mongodb.net/?retryWrites=true&w=majority`, {useNewUrlParser:true});
+
 // CREATING A SCHEMA OF ITEMS
 const itemSchema=new mongoose.Schema({
   name: String
@@ -124,9 +126,9 @@ app.get("/about",function(req, res){
 // CHECKING WEATHER THE SERVER IS RUNNING OR NOT.
 let port= process.env.PORT;
 if (port==null || port=="") {
-  port=3000;
+  port=8000;
 }
 
 app.listen(port, function(){
-  console.log("The server started Successfully.");
+  console.log("The server started Successfully on port 8000");
 })
