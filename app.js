@@ -130,5 +130,5 @@ if (port==null || port=="") {
 }
 
 app.listen(port, function(){
-  console.log("The server started Successfully on port 8000");
+  console.log("The server started Successfully.");
 })
