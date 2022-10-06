@@ -4,7 +4,7 @@
 3. Delete the task when its done.
 4. You can also create multiple lists at the same time.
 5. So you can keep the list of different types of tasks.
-6. This App is Deployed on Heroku.
+6. This app is deployed on Heroku.
 
 CHECK IT OUT!!!
 LINK-->> https://stormy-mountain-67674.herokuapp.com/
